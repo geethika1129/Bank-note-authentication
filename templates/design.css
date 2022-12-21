@@ -1,0 +1,16 @@
+.bb {
+    margin: 30px;
+    background-color: rgb(97, 93, 94);
+    padding: 30px;
+    color: aliceblue;
+}
+
+.hh {
+    margin: 30px;
+    padding: 40px;
+    border-radius: 5px;
+}
+
+.kk {
+    padding: 30px;
+}

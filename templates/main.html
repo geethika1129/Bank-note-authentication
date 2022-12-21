@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Diabetes Predictor</a>
+            </div>
+        </div>
+    </nav>
+
+    <form method="POST" action="/predict">
+        <div class="bb">
+            <div class="form-group">
+                <label for="email">Variance :</label>
+                <input type="number" class="form-control" placeholder="Enter" id="email">
+            </div>
+            <div class="form-group">
+                <label for="pwd">skewness:</label>
+                <input type="number" class="form-control" placeholder="Enter" id="pwd">
+            </div>
+            <div class="form-group">
+                <label for="pwd">curtosis:</label>
+                <input type="number" class="form-control" placeholder="Enter" id="pwd">
+            </div>
+            <div class="form-group">
+                <label for="pwd">entropy:</label>
+                <input type="number" class="form-control" placeholder="Enter" id="pwd">
+            </div>
+
+        </div>
+        <div class="hh">
+            <button type="submit" class="btn btn-success btn-block kk">Check!!</button>
+        </div>
+    </form>
+
+</body>
+
+</body>
+
+</html>
