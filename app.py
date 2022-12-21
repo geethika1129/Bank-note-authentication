@@ -9,7 +9,7 @@ model=pickle.load(open("classifier.pkl","rb"))
 def home():
     return render_template("main.html")
 
-@app.route("/predict",methods=['POST','GET'])
+
 @app.route("/predict",methods=['POST','GET'])
 def predict():
     float_features=[float(x) for x in request.form.values()]
