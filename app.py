@@ -1,4 +1,7 @@
 from flask import Flask,request,jsonify,render_template
+import logging
+logging.basicConfig(filename='example.log', encoding='utf-8', level=logging.DEBUG)
+
 import pickle
 import numpy as np
 
@@ -14,7 +17,10 @@ def home():
 def predict():
     float_features=[float(x) for x in request.form.values()]
     features=[np.array(float_features)]
-    print(features)
+    import sys
+
+    print(features,  file=sys.stderr)
+
     prediction = model.predict(features)
 
     return render_template("result.html",prediction_text="It is {}".format(prediction))
